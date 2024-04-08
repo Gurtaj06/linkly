@@ -3,7 +3,6 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 
 function Login() {
-
   return (
     <div className="flex flex-row justify-between bg-[#18181a] w-full h-screen">
       <div className="w-[50%] h-screen m-12">
