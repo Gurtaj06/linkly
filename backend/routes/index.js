@@ -1,11 +1,13 @@
-import { Router } from 'express';
-import userRouter from './user.js'; // Remove curly braces
-import dashRouter from './dashboard.js'; // Remove curly braces
+const {Router} = require('express')
 
-const router = Router();
+const userRouter = require('./user')
+const dashRouter = require('./dashboard')
 
 
-router.use('/user', userRouter);
-router.use('/account', dashRouter);
+const router = Router()
 
-export default router;
+router.use('/user',userRouter);
+router.use('/dashboard',dashRouter);
+
+
+module.exports= router;
